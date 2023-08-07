@@ -1,10 +1,12 @@
 import React from "react";
+import { Footer, FormBuilder, NavBar, Welcome } from "../../Components";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hello Drama</h1>
-    </div>
+    <>
+      <Welcome></Welcome>
+      <FormBuilder></FormBuilder>
+    </>
   );
 };
 

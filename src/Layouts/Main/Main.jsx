@@ -1,12 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { Footer, NavBar } from "../../Components";
 
 const Main = () => {
   return (
-    <div>
-      <h1>This is alpha</h1>
+    <>
+      <NavBar></NavBar>
       <Outlet></Outlet>
-    </div>
+      <Footer></Footer>
+    </>
   );
 };
 
