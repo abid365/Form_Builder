@@ -7,9 +7,9 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Welcome = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 my-5 mx-8">
+    <div className="grid grid-cols-3 gap-4 mt-5 mb-10 mx-8">
       {/* 1st col */}
-      <div className="border-2 border-slate-300 shadow-xl rounded-2xl p-10 text-white min-h-screen bg-[#3b37ff] flex flex-col justify-evenly">
+      <div className="border-2 border-slate-300 shadow-xl rounded-[24px] p-10 text-white min-h-screen bg-[#3b37ff] flex flex-col justify-evenly">
         <div>
           <p className="text-xs font-bold tracking-wider text-white mb-28">
             <LuBird className="inline-block text-white text-lg"></LuBird>{" "}
@@ -37,10 +37,10 @@ const Welcome = () => {
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper bg-[#2420e2] my-3 rounded-xl"
+            className="mySwiper bg-[#2420e2] mt-3 rounded-xl"
           >
             <SwiperSlide className="px-4 py-6 ">
-              <h1 className="text-xs w-full tracking-tighter">
+              <h1 className="text-sm w-full font-bold">
                 CrickFrom made creating complex forms a breeze, but a wider
                 variety of customizable templates would be fantastic!
               </h1>
@@ -57,7 +57,7 @@ const Welcome = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="px-4 py-6 ">
-              <h1 className="text-xs w-full tracking-tighter">
+              <h1 className="text-sm w-full font-bold">
                 User-friendly interface and seamless integration options, though
                 improved mobile responsiveness would enhance the overall
                 experience.
@@ -75,7 +75,7 @@ const Welcome = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="px-4 py-6 ">
-              <h1 className="text-xs w-full tracking-tighter">
+              <h1 className="text-sm w-full font-bold">
                 CrickFrom's intuitive drag-and-drop design is impressive, yet
                 more advanced styling features could take it to the next level
               </h1>
@@ -95,7 +95,16 @@ const Welcome = () => {
         </div>
       </div>
       {/* 2nd col */}
-      <div className="border rounded-lg min-h-screen col-span-2">text</div>
+      <div className="border-slate-200 rounded-3xl min-h-screen col-span-2 p-10 bg-[#fffafa]">
+        <div>
+          <h1 className="text-5xl font-bold capitalize mt-10 tracking-tight cursor-pointer">
+            make beautiful forms just in seconds
+          </h1>
+          <button className="bg-[#2420e2] border-slate-50 rounded-lg hover:bg-[#3b37ff] cursor-pointer text-white font-bold px-7 py-3 my-10">
+            Get Started
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
