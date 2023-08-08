@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Welcome = () => {
+  const commonListStyle = `my-3 text-sm p-4 border rounded-lg bg-[#ebf6f7] border-white`;
   return (
     <div className="grid grid-cols-3 gap-4 mt-5 mb-10 mx-8">
       {/* 1st col */}
@@ -103,6 +104,36 @@ const Welcome = () => {
           <button className="bg-[#2420e2] border-slate-50 rounded-lg hover:bg-[#3b37ff] cursor-pointer text-white font-bold px-7 py-3 my-10">
             Get Started
           </button>
+          <h1 className="my-5 text-2xl font-bold">
+            Tips to create a bold and<br></br> beautiful form 🦓
+          </h1>
+          <ul className="list-none grid grid-cols-2 gap-4">
+            <li className={commonListStyle}>
+              <strong>Keep it concise:</strong> Write short and impactful lines
+              that grab attention immediately.
+              <span>🚀</span>
+            </li>
+            <li className={commonListStyle}>
+              <strong>Use power words:</strong> Incorporate strong verbs and
+              adjectives to evoke emotion and action.
+              <span>💥</span>
+            </li>
+            <li className={commonListStyle}>
+              <strong>Be clear:</strong> Communicate your message or purpose
+              directly and avoid jargon.
+              <span>🎯</span>
+            </li>
+            <li className={commonListStyle}>
+              <strong>Invoke curiosity:</strong> Pose questions or present
+              intriguing statements to pique interest.
+              <span>❓</span>
+            </li>
+            <li className={commonListStyle}>
+              <strong>Highlight benefits:</strong> Clearly explain how your
+              product or service solves a problem.
+              <span>🔑</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

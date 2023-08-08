@@ -1,4 +1,5 @@
 import React from "react";
+import FormInput from "./SubComponents/FormInput";
 
 const FormBuilder = () => {
   // react hook form
@@ -11,18 +12,10 @@ const FormBuilder = () => {
         </h1>
         {/* forms */}
         <form action="">
-          <label
-            className="text-sm font-bold tracking-wider text-slate-800"
-            htmlFor=""
-          >
-            Your Name
-          </label>
-          {/* <input
-            className="px-7 py-2 border border-slate-800 rounded-sm"
-            type="text"
-            name="name"
-            placeholder="John Doe"
-          /> */}
+          <FormInput labelText="Your Name" placeholder="User Name"></FormInput>
+          <FormInput placeholder="Email"></FormInput>
+          <FormInput placeholder="password"></FormInput>
+          <FormInput placeholder="Confirm Pass"></FormInput>
         </form>
       </div>
     </div>
