@@ -10,7 +10,7 @@ const Welcome = () => {
   return (
     <div className="grid grid-cols-3 gap-4 mt-5 mb-10 mx-8">
       {/* 1st col */}
-      <div className="border-2 border-slate-300 shadow-xl rounded-[24px] p-10 text-white min-h-screen bg-[#3b37ff] flex flex-col justify-evenly">
+      <div className="border-2 border-slate-300 shadow-xl rounded-[24px] p-7 text-white min-h-screen bg-[#3b37ff] flex flex-col justify-evenly">
         <div>
           <p className="text-xs font-bold tracking-wider text-white mb-28">
             <LuBird className="inline-block text-white text-lg"></LuBird>{" "}
@@ -98,8 +98,9 @@ const Welcome = () => {
       {/* 2nd col */}
       <div className="border-slate-200 rounded-3xl min-h-screen col-span-2 p-10 bg-[#fffafa]">
         <div>
-          <h1 className="text-5xl font-bold capitalize mt-10 tracking-tight cursor-pointer">
-            make beautiful forms just in seconds
+          <h1 className="text-5xl font-bold capitalize mt-10 cursor-pointer">
+            make beautiful <span className="tracking-widest">forms</span> just
+            in seconds 🐎
           </h1>
           <button className="bg-[#2420e2] border-slate-50 rounded-lg hover:bg-[#3b37ff] cursor-pointer text-white font-bold px-7 py-3 my-10">
             Get Started

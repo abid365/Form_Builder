@@ -15,10 +15,11 @@ const NavBarItem = ({ title, classProps }) => {
 
 const NavBar = () => {
   return (
-    <nav className="rounded-2xl p-4 mt-4 md:flex md:justify-between md:items-center mx-8 sticky top-0 z-50 text-white bg-slate-800">
+    <nav className="p-4 md:flex md:justify-between md:items-center sticky top-0 z-50 text-white bg-slate-800">
       <div className="text-white">
         <h1 className="text-xl font-extrabold">
-          <LuBird className="inline-block mb-2 text-4xl"></LuBird> CRIFORM
+          <LuBird className="inline-block mb-2 font-extrabold text-2xl"></LuBird>{" "}
+          CRIFORM
         </h1>
       </div>
       <ul className="md:flex hidden list-none items-center">
